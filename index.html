@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Farwin Beauty – jenama wangian premium buatan Malaysia. Temui koleksi eksklusif Timeless, Limited, dan Farwin x Disney. Sertai kami sebagai Strategic Partner." />
+  <meta name="keywords" content="farwin, farwin beauty, perfume malaysia, wangian premium, halal perfume, GMP certified, strategic partner" />
+  <meta property="og:title" content="Farwin Beauty – Made in Malaysia" />
+  <meta property="og:description" content="Wangian premium, harga mampu milik. Pilihan sempurna untuk semua." />
+  <meta property="og:image" content="./assets/hero.png" />
+  <title>Farwin Beauty – Made in Malaysia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <span class="logo-text">FARWIN</span>
+        <span class="logo-sub">BEAUTY</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#collections" class="nav-link" id="nav-collections">Collections</a>
+        <a href="#quiz" class="nav-link" id="nav-quiz">Scent Finder</a>
+        <a href="#partner" class="nav-link" id="nav-partner">Partnership</a>
+        <a href="#partner" class="nav-cta" id="nav-cta-btn">Jadi Partner</a>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">✕</button>
+    <nav class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link" id="mob-nav-about">About</a>
+      <a href="#collections" class="mobile-nav-link" id="mob-nav-collections">Collections</a>
+      <a href="#quiz" class="mobile-nav-link" id="mob-nav-quiz">Scent Finder</a>
+      <a href="#partner" class="mobile-nav-link" id="mob-nav-partner">Partnership</a>
+      <a href="#partner" class="mobile-nav-link mobile-nav-cta" id="mob-nav-cta">Jadi Partner</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="./assets/hero.png" alt="Farwin Beauty luxury perfume bottle on dark marble" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Made in Malaysia · Sejak 2016</p>
+      <h1 class="hero-title reveal">
+        <span>Wangian</span>
+        <span class="gold-text">Premium</span>
+        <span>Untuk Semua</span>
+      </h1>
+      <p class="hero-subtitle reveal">Kualiti antarabangsa, harga mampu milik. Bersertifikasi Halal & GMP.</p>
+      <div class="hero-actions reveal">
+        <a href="#collections" class="btn-primary" id="hero-explore-btn">Terokai Koleksi</a>
+        <a href="#about" class="btn-ghost" id="hero-story-btn">Kisah Kami</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ BADGES ═══════════════════════════ -->
+  <section class="badges-bar" id="badges">
+    <div class="badges-container">
+      <div class="badge-item reveal">
+        <div class="badge-icon">✦</div>
+        <div class="badge-info">
+          <strong>Halal Certified</strong>
+          <span>JAKIM Approved</span>
+        </div>
+      </div>
+      <div class="badge-divider"></div>
+      <div class="badge-item reveal">
+        <div class="badge-icon">◈</div>
+        <div class="badge-info">
+          <strong>GMP Certified</strong>
+          <span>Quality Controlled</span>
+        </div>
+      </div>
+      <div class="badge-divider"></div>
+      <div class="badge-item reveal">
+        <div class="badge-icon">❋</div>
+        <div class="badge-info">
+          <strong>Heavy Metal Free</strong>
+          <span>MyCO2 Lab Tested</span>
+        </div>
+      </div>
+      <div class="badge-divider"></div>
+      <div class="badge-item reveal">
+        <div class="badge-icon">✤</div>
+        <div class="badge-info">
+          <strong>20+ Wangian</strong>
+          <span>Pilihan Eksklusif</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow reveal">Kisah Kami</p>
+          <h2 class="section-title reveal">Dari Rumah ke <span class="gold-text">Bangunan Sendiri</span></h2>
+          <p class="about-para reveal">
+            Farwin diasaskan oleh <strong>Wan Mohammad Faiz Wan Abdullah</strong> pada tahun 2016 di Kota Bharu, Kelantan. Bermula dengan satu produk dan satu impian besar, Faiz – anak ke-8 daripada 11 adik-beradik – membuktikan bahawa tekad boleh mengubah nasib.
+          </p>
+          <p class="about-para reveal">
+            Pada usia 22 tahun, beliau memulakan perniagaan dari rumah. Hari ini, Farwin sudah memiliki <strong>bangunan sendiri</strong> (2020), aplikasi mudah alih rasmi (2021), dan portal agensi canggih <strong>farwin.pro</strong> (2022).
+          </p>
+          <div class="about-stats reveal">
+            <div class="stat" id="stat-year">
+              <span class="stat-num">2016</span>
+              <span class="stat-label">Diasaskan</span>
+            </div>
+            <div class="stat" id="stat-products">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Produk</span>
+            </div>
+            <div class="stat" id="stat-certs">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Sijil Kualiti</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-card glass-card">
+            <blockquote class="about-quote">
+              "Impian itu untuk menginspirasi orang lain mengubah hidup mereka menjadi lebih baik."
+            </blockquote>
+            <div class="about-author">
+              <div class="author-avatar">WF</div>
+              <div>
+                <strong>Wan Mohammad Faiz</strong>
+                <span>Pengasas, Farwin Beauty</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-mission-grid">
+            <div class="mission-card glass-card">
+              <span class="mission-icon">◎</span>
+              <h3>Visi</h3>
+              <p>Jenama terkenal di peringkat antarabangsa.</p>
+            </div>
+            <div class="mission-card glass-card">
+              <span class="mission-icon">◉</span>
+              <h3>Misi</h3>
+              <p>Pastikan semua orang di dunia mendapat produk terbaik Farwin.</p>
+            </div>
+            <div class="mission-card glass-card" style="grid-column: span 2;">
+              <span class="mission-icon">◈</span>
+              <h3>Objektif</h3>
+              <p>Memberi peluang kepada rakyat untuk menjalani kehidupan yang lebih baik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ COLLECTIONS ═══════════════════════════ -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">Koleksi Eksklusif</p>
+      <h2 class="section-title reveal" style="text-align:center;">Pilih <span class="gold-text">Wangian</span> Anda</h2>
+
+      <div class="collections-tabs reveal" id="collections-tabs" role="tablist">
+        <button class="tab-btn active" id="tab-timeless" data-tab="timeless" role="tab" aria-selected="true" aria-controls="panel-timeless">Timeless</button>
+        <button class="tab-btn" id="tab-limited" data-tab="limited" role="tab" aria-selected="false" aria-controls="panel-limited">Limited</button>
+        <button class="tab-btn" id="tab-disney" data-tab="disney" role="tab" aria-selected="false" aria-controls="panel-disney">Farwin × Disney</button>
+      </div>
+
+      <div class="collections-panel" id="panel-timeless" role="tabpanel" aria-labelledby="tab-timeless">
+        <div class="collection-content">
+          <div class="collection-image-wrap">
+            <img src="./assets/timeless.png" alt="Farwin Timeless Collection perfume bottle" class="collection-img" loading="lazy" />
+            <div class="collection-glow timeless-glow"></div>
+          </div>
+          <div class="collection-info">
+            <span class="collection-tag">Koleksi Klasik</span>
+            <h3 class="collection-name">Farwin Timeless</h3>
+            <p class="collection-desc">Wangian abadi yang direka untuk mereka yang menghargai keistimewaan sejati. Setiap titisan menceritakan kisah ketulenan dan keanggunan tanpa batas masa.</p>
+            <div class="notes-grid">
+              <div class="note-group">
+                <span class="note-label">Top Notes</span>
+                <span class="note-value">Bergamot · Lemon · Mandarin</span>
+              </div>
+              <div class="note-group">
+                <span class="note-label">Heart Notes</span>
+                <span class="note-value">Jasmine · Rose · Iris</span>
+              </div>
+              <div class="note-group">
+                <span class="note-label">Base Notes</span>
+                <span class="note-value">Sandalwood · Musk · Amber</span>
+              </div>
+            </div>
+            <a href="https://farwin.com.my/farwin-timeless/" target="_blank" rel="noopener" class="btn-primary collection-btn" id="cta-timeless">Terokai Timeless</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="collections-panel hidden" id="panel-limited" role="tabpanel" aria-labelledby="tab-limited">
+        <div class="collection-content">
+          <div class="collection-image-wrap">
+            <img src="./assets/limited.png" alt="Farwin Limited Edition perfume bottle" class="collection-img" loading="lazy" />
+            <div class="collection-glow limited-glow"></div>
+          </div>
+          <div class="collection-info">
+            <span class="collection-tag">Edisi Terhad</span>
+            <h3 class="collection-name">Farwin Limited</h3>
+            <p class="collection-desc">Dicipta dalam bilangan terhad untuk jiwa yang unik. Setiap botol adalah koleksi eksklusif yang meraikan keistimewaan pemiliknya.</p>
+            <div class="notes-grid">
+              <div class="note-group">
+                <span class="note-label">Top Notes</span>
+                <span class="note-value">Black Pepper · Cardamom · Grapefruit</span>
+              </div>
+              <div class="note-group">
+                <span class="note-label">Heart Notes</span>
+                <span class="note-value">Oud · Vetiver · Cedar</span>
+              </div>
+              <div class="note-group">
+                <span class="note-label">Base Notes</span>
+                <span class="note-value">Dark Amber · Leather · Patchouli</span>
+              </div>
+            </div>
+            <a href="https://farwin.com.my/farwin-limited/" target="_blank" rel="noopener" class="btn-primary collection-btn" id="cta-limited">Terokai Limited</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="collections-panel hidden" id="panel-disney" role="tabpanel" aria-labelledby="tab-disney">
+        <div class="collection-content">
+          <div class="collection-image-wrap">
+            <img src="./assets/disney.png" alt="Farwin x Disney collaboration perfume bottle" class="collection-img" loading="lazy" />
+            <div class="collection-glow disney-glow"></div>
+          </div>
+          <div class="collection-info">
+            <span class="collection-tag">Kolaborasi Eksklusif</span>
+            <h3 class="collection-name">Farwin × Disney</h3>
+            <p class="collection-desc">Dua dunia bertemu — keajaiban Disney dalam botol wangian mewah Farwin. Hadirkan semula kenangan manis dalam setiap semburan yang mempesona.</p>
+            <div class="notes-grid">
+              <div class="note-group">
+                <span class="note-label">Top Notes</span>
+                <span class="note-value">Strawberry · Peach · Yuzu</span>
+              </div>
+              <div class="note-group">
+                <span class="note-label">Heart Notes</span>
+                <span class="note-value">Violet · Magnolia · Lily</span>
+              </div>
+              <div class="note-group">
+                <span class="note-label">Base Notes</span>
+                <span class="note-value">Vanilla · White Musk · Cashmere</span>
+              </div>
+            </div>
+            <a href="https://farwin.com.my/farwin-x-disney/" target="_blank" rel="noopener" class="btn-primary collection-btn" id="cta-disney">Terokai Disney</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SCENT FINDER QUIZ ═══════════════════════════ -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">Penemuan Peribadi</p>
+      <h2 class="section-title reveal" style="text-align:center;">Cari <span class="gold-text">Wangian</span> Anda</h2>
+      <p class="section-subtitle reveal" style="text-align:center;">Jawab 3 soalan mudah dan kami akan cadangkan koleksi terbaik untuk anda.</p>
+
+      <div class="quiz-wrapper reveal" id="quiz-wrapper">
+        <!-- Step 1 -->
+        <div class="quiz-step active" id="quiz-step-1" data-step="1">
+          <p class="quiz-step-label">Soalan 1 / 3</p>
+          <h3 class="quiz-question">Bagaimana anda menggambarkan diri anda?</h3>
+          <div class="quiz-options" id="quiz-options-1">
+            <button class="quiz-option" id="q1-a" data-val="classic" data-step="1">
+              <span class="option-icon">🕊️</span>
+              <span class="option-text">Klasik & Elegan</span>
+            </button>
+            <button class="quiz-option" id="q1-b" data-val="bold" data-step="1">
+              <span class="option-icon">🔥</span>
+              <span class="option-text">Berani & Misteri</span>
+            </button>
+            <button class="quiz-option" id="q1-c" data-val="playful" data-step="1">
+              <span class="option-icon">✨</span>
+              <span class="option-text">Ceria & Penuh Warna</span>
+            </button>
+          </div>
+          <div class="quiz-progress"><div class="quiz-progress-bar" style="width:33%"></div></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="quiz-step" id="quiz-step-2" data-step="2">
+          <p class="quiz-step-label">Soalan 2 / 3</p>
+          <h3 class="quiz-question">Bila anda paling suka memakai wangian?</h3>
+          <div class="quiz-options" id="quiz-options-2">
+            <button class="quiz-option" id="q2-a" data-val="day" data-step="2">
+              <span class="option-icon">☀️</span>
+              <span class="option-text">Siang Hari</span>
+            </button>
+            <button class="quiz-option" id="q2-b" data-val="evening" data-step="2">
+              <span class="option-icon">🌙</span>
+              <span class="option-text">Malam & Majlis</span>
+            </button>
+            <button class="quiz-option" id="q2-c" data-val="always" data-step="2">
+              <span class="option-icon">⏰</span>
+              <span class="option-text">Sepanjang Masa</span>
+            </button>
+          </div>
+          <div class="quiz-progress"><div class="quiz-progress-bar" style="width:66%"></div></div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="quiz-step" id="quiz-step-3" data-step="3">
+          <p class="quiz-step-label">Soalan 3 / 3</p>
+          <h3 class="quiz-question">Apakah jenis wangian yang anda gemari?</h3>
+          <div class="quiz-options" id="quiz-options-3">
+            <button class="quiz-option" id="q3-a" data-val="floral" data-step="3">
+              <span class="option-icon">🌸</span>
+              <span class="option-text">Floral & Segar</span>
+            </button>
+            <button class="quiz-option" id="q3-b" data-val="woody" data-step="3">
+              <span class="option-icon">🌲</span>
+              <span class="option-text">Woody & Earthy</span>
+            </button>
+            <button class="quiz-option" id="q3-c" data-val="sweet" data-step="3">
+              <span class="option-icon">🍬</span>
+              <span class="option-text">Sweet & Fruity</span>
+            </button>
+          </div>
+          <div class="quiz-progress"><div class="quiz-progress-bar" style="width:100%"></div></div>
+        </div>
+
+        <!-- Result -->
+        <div class="quiz-step quiz-result" id="quiz-result" data-step="result">
+          <div class="result-icon" id="result-icon">✦</div>
+          <h3 class="result-title" id="result-title">Koleksi Anda</h3>
+          <p class="result-collection" id="result-collection">Farwin Timeless</p>
+          <p class="result-desc" id="result-desc">Sempurna untuk jiwa yang menghargai keanggunan abadi.</p>
+          <div class="result-actions">
+            <a href="#collections" class="btn-primary" id="result-explore-btn">Lihat Koleksi</a>
+            <button class="btn-ghost" id="quiz-restart-btn">Cuba Semula</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ STRATEGIC PARTNER ═══════════════════════════ -->
+  <section class="partner" id="partner">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">Peluang Perniagaan</p>
+      <h2 class="section-title reveal" style="text-align:center;">Jadi <span class="gold-text">Strategic Partner</span></h2>
+      <p class="section-subtitle reveal" style="text-align:center;">Farwin adalah jenama lifestyle Malaysia dengan sistem agensi 100% yang terbukti berjaya. Mulakan perjalanan anda bersama kami.</p>
+
+      <div class="partner-benefits reveal">
+        <div class="benefit-card glass-card" id="benefit-1">
+          <div class="benefit-icon">💎</div>
+          <h3>Produk Premium</h3>
+          <p>Jual produk bersertifikasi Halal & GMP yang dipercayai ribuan pelanggan.</p>
+        </div>
+        <div class="benefit-card glass-card" id="benefit-2">
+          <div class="benefit-icon">📱</div>
+          <h3>Sistem Digital</h3>
+          <p>Akses portal eksklusif farwin.pro & aplikasi mudah alih untuk urus perniagaan anda.</p>
+        </div>
+        <div class="benefit-card glass-card" id="benefit-3">
+          <div class="benefit-icon">💰</div>
+          <h3>Komisen Lumayan</h3>
+          <p>Dapatkan komisen menarik setiap jualan dengan bonus tambahan apabila mencapai target.</p>
+        </div>
+        <div class="benefit-card glass-card" id="benefit-4">
+          <div class="benefit-icon">🤝</div>
+          <h3>Sokongan Penuh</h3>
+          <p>Latihan, bahan pemasaran, dan sokongan penuh daripada pasukan Farwin.</p>
+        </div>
+      </div>
+
+      <!-- Commission Calculator -->
+      <div class="calculator-section reveal" id="calculator-section">
+        <div class="glass-card calculator-card">
+          <h3 class="calculator-title">💡 Kira Potensi Pendapatan Anda</h3>
+          <div class="calculator-inputs">
+            <div class="calc-input-group">
+              <label for="calc-bottles" class="calc-label">Bilangan Botol Dijual / Bulan</label>
+              <input type="range" id="calc-bottles" min="10" max="200" value="50" step="5" class="calc-slider" aria-label="Bilangan botol dijual sebulan" />
+              <span class="calc-bottles-display" id="calc-bottles-display">50 botol</span>
+            </div>
+            <div class="calc-input-group">
+              <label for="calc-price" class="calc-label">Harga Jual Purata (RM)</label>
+              <input type="range" id="calc-price" min="30" max="120" value="60" step="5" class="calc-slider" aria-label="Harga jual purata dalam ringgit" />
+              <span class="calc-price-display" id="calc-price-display">RM 60</span>
+            </div>
+          </div>
+          <div class="calculator-results" id="calculator-results">
+            <div class="result-stat" id="res-revenue">
+              <span class="res-label">Jualan Kasar</span>
+              <span class="res-val" id="res-revenue-val">RM 3,000</span>
+            </div>
+            <div class="result-stat" id="res-commission">
+              <span class="res-label">Komisen (25%)</span>
+              <span class="res-val" id="res-commission-val">RM 750</span>
+            </div>
+            <div class="result-stat highlight" id="res-bonus">
+              <span class="res-label">Anggaran Pendapatan / Bulan</span>
+              <span class="res-val gold-text" id="res-total-val">RM 750</span>
+            </div>
+          </div>
+          <p class="calc-disclaimer">* Anggaran sahaja. Pendapatan sebenar bergantung pada usaha dan prestasi individu.</p>
+        </div>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="signup-section reveal" id="signup-section">
+        <div class="glass-card signup-card">
+          <h3 class="signup-title">Daftar Minat Anda</h3>
+          <p class="signup-sub">Isi borang di bawah dan pasukan kami akan menghubungi anda dalam masa 24 jam.</p>
+          <form class="signup-form" id="partner-signup-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Nama Penuh *</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="Nama anda" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="form-phone" class="form-label">No. Telefon *</label>
+                <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="01X-XXXXXXX" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-email" class="form-label">Emel *</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="anda@emel.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="form-state" class="form-label">Negeri</label>
+                <select id="form-state" name="state" class="form-input form-select">
+                  <option value="">Pilih Negeri</option>
+                  <option>Johor</option><option>Kedah</option><option>Kelantan</option>
+                  <option>Melaka</option><option>Negeri Sembilan</option><option>Pahang</option>
+                  <option>Perak</option><option>Perlis</option><option>Pulau Pinang</option>
+                  <option>Sabah</option><option>Sarawak</option><option>Selangor</option>
+                  <option>Terengganu</option><option>W.P. Kuala Lumpur</option><option>W.P. Labuan</option><option>W.P. Putrajaya</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="form-message" class="form-label">Pengalaman / Mesej (Pilihan)</label>
+              <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Ceritakan sedikit tentang diri anda atau pengalaman perniagaan anda..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="form-submit-btn">
+              <span id="btn-submit-text">Hantar Permohonan</span>
+              <span id="btn-submit-loading" class="hidden">Menghantar...</span>
+            </button>
+            <div id="form-success-msg" class="form-success hidden">
+              ✦ Terima kasih! Pasukan kami akan menghubungi anda tidak lama lagi.
+            </div>
+            <div id="form-error-msg" class="form-error hidden">
+              Sila lengkapkan semua maklumat yang diperlukan.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">FARWIN <span class="gold-text">BEAUTY</span></span>
+          <p class="footer-tagline">Jenama wangian premium lifestyle Malaysia.</p>
+          <div class="footer-socials">
+            <a href="https://shopee.com.my" target="_blank" rel="noopener" class="social-link" id="social-shopee" aria-label="Shopee">Shopee</a>
+            <a href="https://lazada.com.my" target="_blank" rel="noopener" class="social-link" id="social-lazada" aria-label="Lazada">Lazada</a>
+            <a href="https://farwin.pro/login" target="_blank" rel="noopener" class="social-link" id="social-portal" aria-label="Farwin Pro Portal">farwin.pro</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigasi</h4>
+          <a href="#about" class="footer-link" id="footer-about">About</a>
+          <a href="#collections" class="footer-link" id="footer-collections">Koleksi</a>
+          <a href="#quiz" class="footer-link" id="footer-quiz">Scent Finder</a>
+          <a href="#partner" class="footer-link" id="footer-partner">Partnership</a>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Koleksi</h4>
+          <a href="https://farwin.com.my/farwin-timeless/" target="_blank" rel="noopener" class="footer-link" id="footer-timeless">Timeless</a>
+          <a href="https://farwin.com.my/farwin-limited/" target="_blank" rel="noopener" class="footer-link" id="footer-limited">Limited</a>
+          <a href="https://farwin.com.my/farwin-x-disney/" target="_blank" rel="noopener" class="footer-link" id="footer-disney">Farwin × Disney</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Langganan Berita Terkini</h4>
+          <p>Dapatkan penawaran eksklusif terus ke emel anda.</p>
+          <div class="newsletter-form" id="newsletter-form">
+            <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Emel anda" aria-label="Emel untuk langganan" />
+            <button class="newsletter-btn" id="newsletter-submit-btn" type="button">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Farwin Beauty. Hak Cipta Terpelihara. | Dibuat dengan ❤ di Malaysia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
