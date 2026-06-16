@@ -182,8 +182,20 @@ input, select, textarea { font-family: var(--font-body); }
 }
 .nav-logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
   line-height: 1;
+}
+.logo-img {
+  height: clamp(32px, 5vw, 38px);
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+}
+.logo-texts {
+  display: flex;
+  flex-direction: column;
 }
 .logo-text {
   font-family: var(--font-display);
@@ -945,13 +957,24 @@ input, select, textarea { font-family: var(--font-body); }
   gap: 3rem;
   margin-bottom: 3rem;
 }
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
 .footer-logo {
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   display: block;
-  margin-bottom: 0.75rem;
 }
 .footer-tagline { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
 .footer-socials { display: flex; gap: 0.75rem; flex-wrap: wrap; }
